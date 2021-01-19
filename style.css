@@ -1,0 +1,43 @@
+/* common */
+
+body{
+  padding:0 ;
+  margin:0;
+}
+
+#image{
+  filter: grayscale(100%);
+}
+
+
+#image:hover{
+  opacity: 1;
+  filter:none;
+}
+
+.explanation{
+  visibility: hidden;
+}
+
+.show{
+  visibility: visible;
+}
+
+/* commen end */
+
+/* Grad Work */
+.gradWork{
+  width:400px;
+}
+/* Grad Work End */
+
+
+/* fourmaps */
+.fourmaps{
+  width:500px;
+}
+/* four maps end */
+
+.conceptdesign{
+  width:500px;
+}
