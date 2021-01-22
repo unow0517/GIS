@@ -6,61 +6,68 @@
       <link rel="stylesheet" href="./style.css">
       <script src="./index.js"></script>
     </head>
-    <body>
-      <main class="carousel" >
-        <ol class='carousel__viewport'>
-            <li id="carousel__slide1" class = "carousel__slide" onClick= "gradWork()" tabindex="0">
-              <img  id="image" class="gradWork" src="./images/bachelorgraduationwork.jpg" alt="GraduationWork"> 
+    <body class = 'carousel'>
+      <h1>Click the Image!</h1>
+      <ol class='carousel__viewport'>
+          <li id="carousel__slide1" class = "carousel__slide" onClick= "gradWork()" tabindex="0">
+            <div class="carousel__content">
+              <img  id="image" class="gradworkpanel" src="./images/bachelorgraduationwork.jpg" alt="GraduationWork"> 
               <span id ='gradWork' class="explanation"></span>
-              <a href="#carousel__slide5" class="carousel__prev">Go to last slide</a>
-              <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-            </li>
-            <li id="carousel__slide2" class = "carousel__slide" onClick= "fourmaps()" tabindex="0">
+            </div>
+            <a href="#carousel__slide5" class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+          </li>
+          <li id="carousel__slide2" class = "carousel__slide" onClick= "fourmaps()" tabindex="0">
+            <div class="carousel__content">
               <img id="image" class = 'fourmaps' src="./images/fourmaps.jpg" alt="fourmaps">
-              <span id ='4maps' class="explanation"></span> 
-              <a href="#carousel__slide1" class="carousel__prev">Go to last slide</a>
-              <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-            </li>
-            <li id="carousel__slide3" class = "carousel__slide" onClick= "sixmaps()" tabindex="0">
-              <img id="image" class = 'fourmaps' src="./images/sixmaps.jpg" alt="sixmaps">
+              <span id ='4maps' class="explanation expfourmaps"></span>
+            </div> 
+            <a href="#carousel__slide1" class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+          </li>
+          <li id="carousel__slide3" class = "carousel__slide" onClick= "sixmaps()" tabindex="0">
+            <div class="carousel__content">
+              <img id="image" class = 'sixmaps' src="./images/sixmaps.jpg" alt="sixmaps">
               <span id ='sixmaps' class="explanation"></span>
-              <a href="#carousel__slide2" class="carousel__prev">Go to last slide</a>
-              <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-            </li>
-            <li id="carousel__slide4" class = "carousel__slide" onClick= "finalmaps()" tabindex="0">
-              <img id="image" class = 'fourmaps' src="./images/finalmaps.jpg" alt="finalmaps">
+            </div>
+            <a href="#carousel__slide2" class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+          </li>
+          <li id="carousel__slide4" class = "carousel__slide" onClick= "finalmaps()" tabindex="0">
+            <div class="carousel__content">
+              <img id="image" class = 'finalmaps' src="./images/finalmaps.jpg" alt="finalmaps">
               <span id ='finalmaps' class="explanation"></span>
-              <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
+            </div>
+            <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
             <a href="#carousel__slide5" class="carousel__next">Go to next slide</a>
-            </li>
-            
-            <li id="carousel__slide5" class = "carousel__slide" onClick= "naturpark()" tabindex="0">
-              <img id="image" class = 'fourmaps' src="./images/naturpark.jpg" alt="naturpark">
+          </li>
+          
+          <li id="carousel__slide5" class = "carousel__slide" onClick= "naturpark()" tabindex="0">
+            <div class="carousel__content">
+              <img id='image' class='naturpark' src="./images/panel.jpg" alt="naturpark">
               <span id ='naturpark' class="explanation"></span>  
-              <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-              <a href="#carousel__slide1" class="carousel__next">Go to next slide</a>         
-            </li>
-            
-        </ol>
-        <div class="carousel__navigation">
-          <ol class="carousel__navigation-list">
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>                
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>                
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide5" class="carousel__navigation-button">Go to slide 5</a>                
-            </li>
-          </ol>
-        </div>
-      </main>
+            </div>
+            <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide1" class="carousel__next">Go to next slide</a>         
+          </li>       
+      </ol>
+      <div class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>                
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>                
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide5" class="carousel__navigation-button">Go to slide 5</a>                
+          </li>
+        </div>  
     </body>
   </html>
