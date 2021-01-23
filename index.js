@@ -1,12 +1,12 @@
 function gradWork(){
   document.getElementById('gradWork').innerHTML = `
-    <img class="gradanalysis" src="./images/analysis.jpg" alt="analysis">
-    <p> The first step of Landscape Design is to get to know the site and surroundings.<br><br>
+    <img class="gradanalysis" src="./images/analysis.jpg" alt="analysis"><br>
+    <span> The first step of Landscape Design is to get to know the site and surroundings.<br><br>
     And GIS is the best tool to implement the first step with.<br><br>
     Since the analysis determine the direction of design, it must be implemented meticulously.<br><br>
     For this reason, I personally think GIS analysis is the most important part in Landscape Design.<br><br>
     In this webpage, you can have a look in detail how GIS was applied in my graduation design work.
-    </P>
+    </span>
   `
   document.getElementById('gradWork').classList.toggle('show')
 }
