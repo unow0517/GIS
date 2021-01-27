@@ -1,3 +1,8 @@
+body{
+  background-color: #fdb17f;;
+  font-size:3vh;
+}
+
 #slider{
   margin: 0 auto;
   width: 1500px;
@@ -159,7 +164,7 @@
   width: 15px;
   height: 15px;
   border-radius: 100%;
-  background: #ccc;
+  background: #FD6600;
   margin: 0 10px;
 }
 
@@ -194,10 +199,6 @@
 }
 
 /*///////// contents common //////////*/
-body{
-  font-size:3vh;
-}
-
 .slide-content2,
 .slide-content3,
 .slide-content4,
