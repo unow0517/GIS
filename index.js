@@ -1,20 +1,18 @@
 function gradWork(){
   document.getElementById('gradWork').innerHTML = `
-    <img class="gradanalysis" src="./images/analysis.jpg" alt="analysis"><br>
-    <span> The first step of Landscape Design is to get to know the site and surroundings.<br><br>
-    And GIS is the best tool to implement the first step with.<br><br>
-    Since the analysis determine the direction of design, it must be implemented meticulously.<br><br>
-    For this reason, I personally think GIS analysis is the most important part in Landscape Design.<br><br>
-    In this webpage, you can have a look in detail how GIS was applied in my graduation design work.
-    </span>
+    <img class="gradanalysis" src="./image/analysis.jpg" alt="analysis"><br>
+    <p> GIS is applied to the first step of Landscape Design is to get to know the site and surroundings.<br><br>
+    Since the analysis determine the direction of design, it must be implemented precisely, meticulously.<br><br>
+    Let's see how GIS was used by YunHo fron now on.
+    </p>
   `
   document.getElementById('gradWork').classList.toggle('show')
 }
 
 function fourmaps(){
   document.getElementById('4maps').innerHTML = `
-    <p>Most of the case, the data is found in internet, <br>since most governments provides public geospatial data.<br><br> 
-      I downloaded geospatial data in Seoul, South Korea, <br> and extracted the part surroundings the target site.<br><br> 
+    <p>Most of the case, the data is found at governments provides public geospatial data.<br><br> 
+      I downloaded geospatial data of Seoul, South Korea, <br> and extracted the part surroundings the target site.<br><br> 
       Landuse, reptile habitat, biotop and vegetation of the site were investigated <br>
       in order to evaluate ecological value of the site. 
     </p>
@@ -35,7 +33,7 @@ function sixmaps(){
 function finalmaps(){
   document.getElementById('finalmaps').innerHTML = `
     <p>Analysis was completed in several different aspects.<br> Comcept is structured based on this analysis and design is implemented<br><br>
-    <img class='conceptdesign' src="./images/conceptDesign.jpg" alt="analysis"></p>
+    <img class='conceptdesign' src="./image/conceptDesign.jpg" alt="analysis"></p>
   `
   document.getElementById('finalmaps').classList.toggle('show')
 }
@@ -55,4 +53,3 @@ function naturpark(){
   `
   document.getElementById('naturpark').classList.toggle('show')
 }
-

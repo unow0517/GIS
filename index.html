@@ -1,73 +1,76 @@
-<!doctype html>
-  <html>
-    <head>
-
-      <title>YunHo's GIS Works</title>
-      <link rel="stylesheet" href="./style.css">
-      <script src="./index.js"></script>
-    </head>
-    <body class = 'carousel'>
-      <h1>Click the Image!(currently layout only optimized to Desktop) </h1>
-      <ol class='carousel__viewport'>
-          <li id="carousel__slide1" class = "carousel__slide" onClick= "gradWork()" tabindex="0">
-            <div class="carousel__content">
-              <img  id="image" class="gradworkpanel" src="./images/bachelorgraduationwork.jpg" alt="GraduationWork"> 
-              <span id ='gradWork' class="explanation"></span>
+<!DOCTYPE html>
+<head>
+  <title>making slideshow</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./index.js"></script>
+</head>
+<body>
+  <div id="slider">
+    <input type="radio" name ="slider" id="slide1" checked>
+    <input type="radio" name ="slider" id="slide2" >
+    <input type="radio" name ="slider" id="slide3" >
+    <input type="radio" name ="slider" id="slide4" >
+    <input type="radio" name ="slider" id="slide5" >
+    <input type="radio" name ="slider" id="slide6" >
+    <div id="slides">
+      <div id="overflow">
+        <div class="inner">
+          <div class='slide slide_1'>
+            <div class="slide-content slide-content1">
+              <h2>CoronaMap</h2>
+              <img class='coronamap' src="./image/covidNewCases20-21.gif" alt="COVID_1Year"><br>
+              <span class='text'>worldmap.shp + WHO Covid19 Data => Temporal => export 383 png files => png to gif </span>
             </div>
-            <a href="#carousel__slide5" class="carousel__prev"><img class='arrow' src="./images/lessthan.png" alt="lessthan"/></a>
-            <a href="#carousel__slide2" class="carousel__next"><img class='arrow' src="./images/greaterthan.png" alt="greaterthan"/></a>
-          </li>
-          <li id="carousel__slide2" class = "carousel__slide" onClick= "fourmaps()" tabindex="0">
-            <div class="carousel__content">
-              <img id="image" class = 'fourmaps' src="./images/fourmaps.jpg" alt="fourmaps">
+          </div>
+          <div class='slide slide_2' onClick= "gradWork()">
+            <div class="slide-content slide-content2" >
+                <img class="gradworkpanel contentimage" src="./image/bachelorgraduationwork.jpg" alt="GraduationWork"> 
+                <span id ='gradWork' class="explanation"></span>
+            </div>
+          </div>
+          <div class='slide slide_3' onClick= "fourmaps()">
+            <div class="slide-content slide-content3" onClick= "fourmaps()">
+              <img class = 'fourmaps contentimage' src="./image/fourmaps.jpg" alt="fourmaps">
               <span id ='4maps' class="explanation expfourmaps"></span>
-            </div> 
-            <a href="#carousel__slide1" class="carousel__prev"><img class='arrow' src="./images/lessthan.png" alt="lessthan"/></a>
-            <a href="#carousel__slide3" class="carousel__next"><img class='arrow' src="./images/greaterthan.png" alt="greaterthan"/></a>
-          </li>
-          <li id="carousel__slide3" class = "carousel__slide" onClick= "sixmaps()" tabindex="0">
-            <div class="carousel__content">
-              <img id="image" class = 'sixmaps' src="./images/sixmaps.jpg" alt="sixmaps">
+            </div>
+          </div>
+          <div class='slide slide_4' onClick= "sixmaps()">
+            <div class="slide-content slide-content4" onClick= "sixmaps()">
+              <img class = 'sixmaps contentimage' src="./image/sixmaps.jpg" alt="sixmaps">
               <span id ='sixmaps' class="explanation"></span>
             </div>
-            <a href="#carousel__slide2" class="carousel__prev"><img class='arrow' src="./images/lessthan.png" alt="lessthan"/></a>
-            <a href="#carousel__slide4" class="carousel__next"><img class='arrow' src="./images/greaterthan.png" alt="greaterthan"/></a>
-          </li>
-          <li id="carousel__slide4" class = "carousel__slide" onClick= "finalmaps()" tabindex="0">
-            <div class="carousel__content">
-              <img id="image" class = 'finalmaps' src="./images/finalmaps.jpg" alt="finalmaps">
+          </div>
+          <div class='slide slide_5' onClick= "finalmaps()">
+            <div class="slide-content slide-content5" onClick= "finalmaps()">
+              <img class = 'finalmaps contentimage' src="./image/finalmaps.jpg" alt="finalmaps">
               <span id ='finalmaps' class="explanation"></span>
             </div>
-            <a href="#carousel__slide3" class="carousel__prev"><img class='arrow' src="./images/lessthan.png" alt="lessthan"/></a>
-            <a href="#carousel__slide5" class="carousel__next"><img class='arrow' src="./images/greaterthan.png" alt="greaterthan"/></a>
-          </li>
-          
-          <li id="carousel__slide5" class = "carousel__slide" onClick= "naturpark()" tabindex="0">
-            <div class="carousel__content">
-              <img id='image' class='naturpark' src="./images/panel.jpg" alt="naturpark">
-              <span id ='naturpark' class="explanation"></span>  
+          </div>
+          <div class='slide slide_6' onClick= "naturpark()">
+            <div class="slide-content slide-content6"  onClick= "naturpark()">
+                <img id='image' class='naturpark contentimage' src="./image/panel.jpg" alt="naturpark">
+                <span id ='naturpark' class="explanation"></span>  
             </div>
-            <a href="#carousel__slide4" class="carousel__prev"><img class='arrow' src="./images/lessthan.png" alt="lessthan"/></a>
-            <a href="#carousel__slide1" class="carousel__next"><img class='arrow' src="./images/greaterthan.png" alt="greaterthan"/></a>         
-          </li>       
-      </ol>
-      <div class="carousel__navigation">
-        <ol class="carousel__navigation-list">
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>                
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>                
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide5" class="carousel__navigation-button">Go to slide 5</a>                
-          </li>
-        </div>  
-    </body>
-  </html>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="controls">
+      <!-- Label works as a button for input[type=radio]!!! -->
+      <label for ="slide1"></label>
+      <label for ="slide2"></label>
+      <label for ="slide3"></label>
+      <label for ="slide4"></label>
+      <label for ="slide5"></label>
+      <label for ="slide6"></label>
+    </div>
+    <div id="bullets">
+      <label for ="slide1"></label>
+      <label for ="slide2"></label>
+      <label for ="slide3"></label>
+      <label for ="slide4"></label>
+      <label for ="slide5"></label>
+      <label for ="slide6"></label>
+    </div>
+  </div>
+</body>
